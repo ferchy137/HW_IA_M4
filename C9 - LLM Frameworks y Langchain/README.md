@@ -79,16 +79,17 @@ Ciclo principal del chatbot.
 Lee la entrada del usuario, busca información, extrae noticias, genera la respuesta y muestra las fuentes consultadas.
 
 ## 🖼️ Diagrama de Flujo
-flowchart TD
+```mermaid
+graph TD
     A[Usuario ingresa pregunta] --> B[Guardar en memoria]
-    B --> C[Buscar en Google (Serper)]
+    B --> C[Buscar en Google Serper]
     C --> D[Scrapear CNN y CBC]
     D --> E[Preparar contexto]
     E --> F[Generar respuesta con Gemini]
     F --> G[Mostrar respuesta en streaming]
     G --> H[Mostrar fuentes consultadas]
     H --> A
-
+  ```
 ## 💡 Características Clave
 Memoria de conversación: El bot recuerda el historial para respuestas más coherentes.
 Búsqueda web: Integra resultados de Google para respuestas actualizadas.
