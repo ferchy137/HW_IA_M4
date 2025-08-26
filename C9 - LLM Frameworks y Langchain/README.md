@@ -1,4 +1,4 @@
-#Chatbot con Gemini, Búsqueda Web y Scraping de Noticias
+# Chatbot con Gemini, Búsqueda Web y Scraping de Noticias
 Este directorio contiene un chatbot de consola en Node.js que utiliza la API de Gemini de Google para generar respuestas, realiza búsquedas web usando la API de Serper y extrae noticias recientes de sitios web de noticias. El bot mantiene memoria de la conversación y responde en tiempo real (streaming).
 
 📁 Estructura de Archivos
@@ -13,7 +13,7 @@ chatbot.js: Código fuente principal del chatbot.
 package.json: Dependencias y configuración del proyecto.
 .qodo: (No documentado aquí, no contiene código relevante para el chatbot).
 
-##🚀 Descripción General
+## 🚀 Descripción General
 El propósito de este directorio es ofrecer un chatbot interactivo que:
 
 Mantiene memoria de la conversación.
@@ -22,7 +22,7 @@ Extrae titulares y noticias recientes de CNN Español y CBC.
 Genera respuestas en tiempo real usando la API de Gemini.
 Cita las fuentes consultadas en cada respuesta.
 
-##⚙️ Configuración Inicial
+## ⚙️ Configuración Inicial
 
 1. Instalar dependencias
 Ejecuta en la terminal:
@@ -76,7 +76,7 @@ async function main() { ... }
 Ciclo principal del chatbot.
 Lee la entrada del usuario, busca información, extrae noticias, genera la respuesta y muestra las fuentes consultadas.
 
-##🖼️ Diagrama de Flujo
+## 🖼️ Diagrama de Flujo
 flowchart TD
     A[Usuario ingresa pregunta] --> B[Guardar en memoria]
     B --> C[Buscar en Google (Serper)]
@@ -87,20 +87,20 @@ flowchart TD
     G --> H[Mostrar fuentes consultadas]
     H --> A
 
-##💡 Características Clave
+## 💡 Características Clave
 Memoria de conversación: El bot recuerda el historial para respuestas más coherentes.
 Búsqueda web: Integra resultados de Google para respuestas actualizadas.
 Scraping de noticias: Añade contexto con noticias recientes.
 Streaming: Las respuestas se muestran en tiempo real.
 Citas de fuentes: Transparencia sobre la información utilizada.
 
-##👶 Para Principiantes
+## 👶 Para Principiantes
 Ejecuta el bot con node chatbot.js.
 Escribe tus preguntas en la consola.
 Escribe salir para terminar la conversación.
 El bot buscará información, extraerá noticias y responderá citando las fuentes.
 
-##📚 Dependencias
+## 📚 Dependencias
 @google/generative-ai
 cheerio
 dotenv
