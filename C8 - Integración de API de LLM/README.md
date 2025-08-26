@@ -2,11 +2,13 @@
 Este directorio contiene un chatbot interactivo en Node.js que utiliza la API de Gemini de Google para generar respuestas, integra resultados de búsqueda en Google usando Serper.dev y mantiene memoria de la conversación. El chatbot responde en tiempo real (streaming) y muestra fuentes relevantes para las respuestas.
 
 📁 Estructura de Archivos
+```tree
 .
 ├── .env
 ├── chatbot.js
 ├── package.json
 └── .qodo/
+```
 
 .env: Archivo de configuración con las claves API necesarias.
 chatbot.js: Código principal del chatbot.
@@ -77,6 +79,7 @@ Permite la interacción continua con el usuario por consola.
 El usuario puede escribir "salir" para terminar la conversación.
 
 #🔑 Diagrama de Flujo
+```mermaid
 flowchart TD
     A[Usuario ingresa pregunta] --> B[buscarGoogle]
     B --> C[Obtener snippets y fuentes]
@@ -85,7 +88,7 @@ flowchart TD
     E --> F[Mostrar respuesta en streaming]
     F --> G[Mostrar fuentes]
     G --> H[Esperar nueva pregunta o salir]
-
+  ```
 ## 📝 Ejemplo de Uso
 💬 Chatbot con memoria + Google Search + Gemini + streaming
 
