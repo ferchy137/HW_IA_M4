@@ -33,7 +33,7 @@ Crea un archivo .env con el siguiente formato:
 GEMINI_API_KEY=TU_CLAVE_GEMINI
 SERPER_API_KEY=TU_CLAVE_SERPER
 
-##📝 Explicación de Archivos y Funciones
+## 📝 Explicación de Archivos y Funciones
 chatbot.js
 1. Carga de dependencias y configuración
 Usa dotenv para cargar variables de entorno.
