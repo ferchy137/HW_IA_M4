@@ -1,4 +1,4 @@
-#Chatbot con Gemini, Google Search y Streaming
+# Chatbot con Gemini, Google Search y Streaming
 Este directorio contiene un chatbot interactivo en Node.js que utiliza la API de Gemini de Google para generar respuestas, integra resultados de búsqueda en Google usando Serper.dev y mantiene memoria de la conversación. El chatbot responde en tiempo real (streaming) y muestra fuentes relevantes para las respuestas.
 
 📁 Estructura de Archivos
@@ -13,7 +13,7 @@ chatbot.js: Código principal del chatbot.
 package.json: Lista de dependencias del proyecto.
 .qodo: (No documentado aquí, carpeta auxiliar).
 
-##Descripción General
+## Descripción General
 El propósito de este directorio es proporcionar un chatbot que:
 
 Recibe preguntas del usuario por consola.
@@ -22,7 +22,7 @@ Usa la API de Gemini para generar respuestas inteligentes, considerando tanto la
 Muestra las respuestas en tiempo real (streaming).
 Presenta las fuentes consultadas para mayor transparencia.
 
-##⚙️ Configuración
+## ⚙️ Configuración
 1. Instale las dependencias:
 npm install
 
@@ -30,7 +30,7 @@ npm install
 GROQ_API_KEY=...
 SERPER_API_KEY=...
 
-##🗂️ Explicación de Archivos y Funciones
+## 🗂️ Explicación de Archivos y Funciones
 chatbot.js
 
 1. Importaciones y Configuración
@@ -86,7 +86,7 @@ flowchart TD
     F --> G[Mostrar fuentes]
     G --> H[Esperar nueva pregunta o salir]
 
-##📝 Ejemplo de Uso
+## 📝 Ejemplo de Uso
 💬 Chatbot con memoria + Google Search + Gemini + streaming
 
 Escribe 'salir' para terminar.
@@ -99,13 +99,13 @@ https://ejemplo.com/fuente1
 https://ejemplo.com/fuente2
 
 
-##📚 Características Clave
+## 📚 Características Clave
 Memoria de conversación: El chatbot recuerda el historial para mantener el contexto.
 Búsqueda en Google: Integra resultados actualizados de la web.
 Respuestas en streaming: Muestra la respuesta a medida que se genera.
 Fuentes transparentes: Presenta enlaces a la información utilizada.
 
-##🛠️ Dependencias
+## 🛠️ Dependencias
 @google/generative-ai
 dotenv
 groq-sdk
@@ -113,6 +113,6 @@ node-fetch
 readline
 
 
-##🧩 Personalización
+## 🧩 Personalización
 Puede modificar el modelo de Gemini o la cantidad de resultados de búsqueda ajustando los parámetros en el código.
 Para ampliar la memoria o cambiar el formato de las respuestas, edite las funciones memoria y responderUsuario.
