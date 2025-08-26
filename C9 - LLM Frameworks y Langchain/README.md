@@ -2,11 +2,13 @@
 Este directorio contiene un chatbot de consola en Node.js que utiliza la API de Gemini de Google para generar respuestas, realiza búsquedas web usando la API de Serper y extrae noticias recientes de sitios web de noticias. El bot mantiene memoria de la conversación y responde en tiempo real (streaming).
 
 📁 Estructura de Archivos
+```tree
 .
 ├── .env
 ├── chatbot.js
 ├── package.json
 └── .qodo/
+```
 
 .env: Archivo de configuración con claves API necesarias.
 chatbot.js: Código fuente principal del chatbot.
